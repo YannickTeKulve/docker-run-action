@@ -1,5 +1,5 @@
 # action.yml
-name: "Docker Run"
+name: "Container Run action"
 description: "Run a command in a new container"
 inputs:
   image:
