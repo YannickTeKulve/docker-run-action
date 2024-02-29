@@ -17,7 +17,7 @@ fi
 if [ ! -z $INPUT_DOCKER_HOST ]; then
  exec docker $DOCKER_SOCK run -v "$INPUT_DOCKER_HOST":"$INPUT_DOCKER_HOST" $INPUT_OPTIONS --entrypoint=$INPUT_SHELL $INPUT_IMAGE -c "${INPUT_RUN//$'\n'/;}"
 else
- exec docker run -v "/run/docker/docker.sock":"/run/docker/docker.sock" $INPUT_OPTIONS --entrypoint=$INPUT_SHELL $INPUT_IMAGE -c "${INPUT_RUN//$'\n'/;}"
+ exec docker run -v "/var/run/docker.sock":"/var/run/docker.sock" $INPUT_OPTIONS --entrypoint=$INPUT_SHELL $INPUT_IMAGE -c "${INPUT_RUN//$'\n'/;}"
 fi
 
 
