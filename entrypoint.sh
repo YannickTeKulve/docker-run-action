@@ -11,7 +11,7 @@ fi
 
 
 if [ ! -z $INPUT_DOCKER_HOST ];
-then INPUT_OPTIONS="$INPUT_OPTIONS --host $INPUT_DOCKER_HOST"
+then DOCKER_HOST=$INPUT_DOCKER_HOST
 fi
 
 if [ ! -z $INPUT_DOCKER_HOST ]; then
