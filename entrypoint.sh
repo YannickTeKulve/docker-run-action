@@ -11,7 +11,7 @@ fi
 
 
 if [ ! -z $INPUT_DOCKER_HOST ];
-then then INPUT_OPTIONS="$INPUT_OPTIONS -H  unix://$INPUT_DOCKER_HOST"
+then INPUT_OPTIONS="$INPUT_OPTIONS -H  unix://$INPUT_DOCKER_HOST"
 fi
 
 if [ ! -z $INPUT_DOCKER_HOST ]; then
