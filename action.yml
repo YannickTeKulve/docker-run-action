@@ -28,6 +28,9 @@ inputs:
     description: "Docker Network ID"
     default: ${{ job.container.network }}
     required: false
+  docker_host:
+    description: "Docker Network ID"
+    required: false
 runs:
   using: "docker"
   image: "Dockerfile"
