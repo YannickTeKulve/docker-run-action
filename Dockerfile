@@ -1,4 +1,4 @@
-FROM docker:25.0.3-dind
+FROM docker:25.0.3-cli
 
 RUN apk add bash
 
